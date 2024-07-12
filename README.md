@@ -278,12 +278,20 @@ plt.subplots_adjust(left=0.05, right=0.95, top=0.9, bottom=0.05)
 
 # Display the plot
 plt.show()
+#Ouput
+Average Clustering Coefficient: 0.0000
+Graph is not connected; diameter cannot be computed.
+Degree Centrality: {'BMW Sauber': 0.6896551724137931, 'Williams': 0.6896551724137931, 'Renault': 0.6896551724137931, 'Toro Rosso': 0.6896551724137931, 'Ferrari': 0.6896551724137931, 'Toyota': 0.6896551724137931, 'Super Aguri': 0.6896551724137931, 'Red Bull': 0.6896551724137931, 'Force India': 0.6896551724137931, 'hamilton': 0.3103448275862069, 'heidfeld': 0.3103448275862069, 'rosberg': 0.3103448275862069, 'alonso': 0.3103448275862069, 'kovalainen': 0.3103448275862069, 'nakajima': 0.3103448275862069, 'bourdais': 0.3103448275862069, 'raikkonen': 0.3103448275862069, 'kubica': 0.3103448275862069, 'glock': 0.3103448275862069, 'sato': 0.3103448275862069, 'piquet_jr': 0.3103448275862069, 'massa': 0.3103448275862069, 'coulthard': 0.3103448275862069, 'trulli': 0.3103448275862069, 'sutil': 0.3103448275862069, 'webber': 0.3103448275862069, 'button': 0.3103448275862069, 'davidson': 0.3103448275862069, 'vettel': 0.3103448275862069, 'New Driver': 0.0}
+Betweenness Centrality: {'BMW Sauber': 0.05199781061850029, 'Williams': 0.05199781061850029, 'Renault': 0.05199781061850029, 'Toro Rosso': 0.05199781061850029, 'Ferrari': 0.05199781061850029, 'Toyota': 0.05199781061850029, 'Super Aguri': 0.05199781061850029, 'Red Bull': 0.05199781061850029, 'Force India': 0.05199781061850029, 'hamilton': 0.004433497536945812, 'heidfeld': 0.004433497536945812, 'rosberg': 0.004433497536945812, 'alonso': 0.004433497536945812, 'kovalainen': 0.004433497536945812, 'nakajima': 0.004433497536945812, 'bourdais': 0.004433497536945812, 'raikkonen': 0.004433497536945812, 'kubica': 0.004433497536945812, 'glock': 0.004433497536945812, 'sato': 0.004433497536945812, 'piquet_jr': 0.004433497536945812, 'massa': 0.004433497536945812, 'coulthard': 0.004433497536945812, 'trulli': 0.004433497536945812, 'sutil': 0.004433497536945812, 'webber': 0.004433497536945812, 'button': 0.004433497536945812, 'davidson': 0.004433497536945812, 'vettel': 0.004433497536945812, 'New Driver': 0.0}
 
 ```
 ![download](https://github.com/user-attachments/assets/4764471f-b57a-40c5-8794-9e18a837b5c7)
 
 
-## **Average Clustering Coffeincet **
+
+## **Average Clustering Coefficient** 
+
+- The average clustering coefficient is a measure used in network analysis to quantify how closely nodes in a network cluster together. In simpler terms, it indicates the degree to which nodes tend to form tightly-knit groups. For the bipartite graph of Formula 1 constructors and drivers, calculating the clustering coefficient helps understand how interconnected these entities are within their respective sets.
 
 ```python
 -import pandas as pd
@@ -376,23 +384,21 @@ plt.show()
 Insightful Findings:
 Centrality Analysis:
 
-Discovery: Through the calculation of centrality metrics, I identified that certain constructors and drivers are pivotal in the network. For example, drivers with high betweenness centrality often play a crucial role in connecting different constructors, indicating their strategic importance. Similarly, constructors with high degree centrality are central to multiple driver relationships, highlighting their significant influence within the network.
-Network Structure:
+Through the calculation of centrality metrics, I identified that certain constructors and drivers are pivotal in the network. For example, drivers with high betweenness centrality often play a crucial role in connecting different constructors, indicating their strategic importance. Similarly, constructors with high degree centrality are central to multiple driver relationships, highlighting their significant influence within the network.The hierarchical and bipartite graphs uncovered how constructors and drivers interact. The hierarchical visualization revealed the layers of connections between constructors, drivers, and circuits, while the bipartite graph specifically illustrated the dense connections between constructors and drivers. These visualizations made it clear how certain drivers are linked to multiple constructors, suggesting potential career paths or preferences.
 
-Discovery: The hierarchical and bipartite graphs uncovered how constructors and drivers interact. The hierarchical visualization revealed the layers of connections between constructors, drivers, and circuits, while the bipartite graph specifically illustrated the dense connections between constructors and drivers. These visualizations made it clear how certain drivers are linked to multiple constructors, suggesting potential career paths or preferences.
-Connectivity Issues:
 
 Discovery: By ensuring the graph is connected, I found that some components were isolated. Bridging these components showed how previously disconnected elements are related, which can be crucial for understanding the overall network dynamics and interactions.
 Areas for Improvement:
 Data Enrichment:
 
-Opportunity: Integrate additional datasets such as race results, historical performance, and team dynamics. This would allow for more nuanced analysis, such as understanding how historical performance impacts current relationships or how race results influence driver and constructor connections.
-Dynamic Visualization:
+In reflecting on my personal growth opportunities from this project, I recognize the potential for significant advancement in several areas. Integrating additional datasets, such as race results, historical performance, and team dynamics, would allow me to conduct a more nuanced analysis. This could reveal how past performance impacts current relationships and how race results influence the connections between drivers and constructors. Expanding my approach to include such data would enhance my ability to understand the intricate dynamics of the Formula 1 network.
 
-Opportunity: Use interactive visualization tools like Plotly or D3.js to make the network more engaging. Interactive visualizations would enable users to explore the network dynamically, filter by specific criteria, and gain deeper insights into how different nodes and connections evolve over time.
-Advanced Metrics:
+Additionally, exploring interactive visualization tools like Plotly or D3.js would enable me to make the network more engaging. These tools would allow users to interact with the data dynamically, filter by specific criteria, and gain deeper insights into how different nodes and connections evolve over time. Embracing these advanced visualization techniques would improve my ability to present complex data in a more accessible and insightful manner.
 
-Opportunity: Analyze additional network metrics, such as clustering coefficients to understand the tendency of nodes to form tightly-knit groups, and eigenvector centrality to identify nodes with influence in the network beyond immediate connections. These metrics would provide a more comprehensive view of the network's complexity and the role of key players.
+Furthermore, analyzing additional network metrics, such as clustering coefficients and eigenvector centrality, represents another avenue for growth. By examining clustering coefficients, I could better understand the tendency of nodes to form tightly-knit groups, while eigenvector centrality would help identify nodes with broader influence beyond immediate connections. These advanced metrics would offer a more comprehensive view of the network's complexity and the roles of key players, thereby deepening my analytical capabilities and enhancing my overall understanding of complex networks.
+
+
+
 
 
 ## **Final Thoughts**
